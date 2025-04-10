@@ -1,9 +1,11 @@
+# requirements.txt
 streamlit
 openai
-Pillow==10.0.0
+Pillow>=10.0.0 # Es bueno no fijar versiones exactas a menos que sea necesario
 xhtml2pdf
 emoji
 requests
 elevenlabs
-gcsfs==2023.5.0
-google-cloud-storage==2.10.0
+pymongo[srv]>=4.6.0,<5.0 # Usar una versión reciente de pymongo con soporte SRV
+certifi>=2023.7.22 # Asegurar una versión reciente de certifi
+pytz # Necesario para la zona horaria en sidebar.py
